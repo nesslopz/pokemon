@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Pokemon</title>
+<script type="text/javascript" src="js/pokemon.js">
+</script>
+<link rel="stylesheet" href="css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+<link rel="icon" href="favicon.ico">
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>	
+<div id="content">
+<h1><img src="img/pokebola.png">Bienvenido al mundo <!-- Pokemón --><img src="img/pokemon.png" alt="Pokemón" class="pokemon"><!-- Pokemón --><img src="img/pokebola.png"></h1>
+<h3>Estás en camino a convertirte en un entrenador pokemón, debes prepararte para el gran momento épico en las Olimpiadas Pokemón, pero primero elige con cual pokemón empezarás y recibe tu entrenamiento.</h3>
+<form action="javascript:nombreMaestro();" id="obtenerNombre" autocomplete="off">
+<label><p>¿Cuál es tu nombre?</p>
+	<input type="text" name="nombreUsuario" id="nombreUsuario" value="" placeholder="Nombre o Seudónimo"></label>
+<img id="maestroPokebola" src="img/pokebola.png">
+<label class="getSex">
+<input type="radio" name="sex" value="male" checked>
+<img src="img/male.png" alt="Chico">
+</label>
+<label class="getSex">
+<input type="radio" name="sex" value="female">
+<img src="img/female.png" alt="Chica">
+</label>
+<input type="submit" value="Nuevo Entrenador">
+</form>
+<ul id="listaPokemon">
+</ul>
+<script type="text/javascript">
+insertarPokemones();
+</script>
+<div class="fb-comments" data-href="http://nesslopz.hol.es/mejorandola/practicas/pokemon/" data-numposts="10" data-colorscheme="light"></div>
+</div>
+<footer>
+<a href="http://www.twitter.com/nesslopz" title="">Néstor López García</a>
+</footer>
+</body>
+</html>

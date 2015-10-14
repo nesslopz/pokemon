@@ -1,0 +1,263 @@
+* {
+	margin: 0;
+	padding: 0;
+}:focus {
+	outline: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+body {
+	background: #16a085;
+	color: #2c3e50;
+	display: block;
+	font-family: 'Roboto Slab', serif;
+	font-size: 18px;
+}
+h1, h2, h4, h5, h6 {
+	display: block;
+	text-align: center;
+}
+h1 {
+	color:#FFCC03;
+	font-weight: 700;
+	font-size: 2.5em;
+	letter-spacing: 2px;
+	text-shadow:
+	3px 3px 0 #3C56AA,
+	3px 0 0 #3C56AA,
+	-3px 3px 0 #3C56AA,
+	-3px 0 0 #3C56AA,
+	3px -3px 0 #3C56AA,
+	-3px -3px 0 #3C56AA;
+	/*text-shadow: 0 0 6px #999,
+	1px 1px 0 #3C56AA,
+	2px 2px 0 #3C56AA,
+	3px 3px 0 #3C56AA,
+	-3px 3px 0 #3C56AA,
+	1px -1px 0 #3C56AA,
+	2px -2px 0 #3C56AA,
+	3px -3px 0 #3C56AA,
+	-1px -1px 0 #3C56AA,
+	-2px -2px 0 #3C56AA,
+	-3px -3px 0 #3C56AA;*/
+}
+h1 img {
+	width: 30px;
+	margin: 0.5em;
+	vertical-align: top;
+}
+h1 img.pokemon {
+	width: 130px;
+	margin: 0;
+}
+h3 {
+	padding: .5em;
+	background: rgba(0,0,0,.1);
+	border-radius: 4px;
+	margin: 4px;
+	font-weight: 400;
+}
+
+label p {
+	display: inline-block;
+}
+label input {
+	display: inline-block;
+	margin: .5em;
+	width: 30em;
+	padding: .5em;
+	background: #fff;
+	border:1px solid #999;
+	text-transform: capitalize;
+}
+input[type="submit"] {
+	background: #ddd;
+	border:1px solid #999;
+	border-radius: 4px;
+	color: #333;
+	display: inline-block;
+	font-weight: 700;
+	padding: .5em;
+}
+input[name="sex"] {
+display: none;
+}
+input[name="sex"] + img {
+border-radius: 3px;
+margin: 0 2px;
+padding: 2px;
+vertical-align: middle;
+width: 25px;
+}
+input[name="sex"]:checked + img {
+box-shadow: 0 0 8px #34495e;
+-webkit-transform:scale(1.1);
+-moz-transform:scale(1.1);
+-ms-transform:scale(1.1);
+-o-transform:scale(1.1);
+transform:scale(1.1);
+}
+body>div#content {
+	background:  #ecf0f1;
+	border-radius: 2px;
+	box-shadow: 0 0 8px #333;
+	box-sizing:border-box;
+	margin:1em auto;
+	max-width: 100%;
+	padding: 1em;
+	width: 980px;
+}
+form {
+	border-bottom: 4px solid #ddd;
+	border-top: 4px solid #ddd;
+	margin: .5em 0;
+	padding: .5em 0;
+	text-align: center;
+}
+form #maestroPokebola {
+	display: none;
+}
+#listaPokemon {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+#listaPokemon li {
+	display: inline-block;
+	text-align: left;
+	margin: 10px;
+	box-sizing:border-box;
+	width: 280px;
+}
+#listaPokemon li label {
+	display: block;
+	background: #E7E7E7;
+	border-radius:1em;
+	padding: .5em;
+	position: relative;
+}
+#listaPokemon li label:hover {
+	background: #34495e;
+	color: #ecf0f1;
+}
+#listaPokemon li > label > span {
+	position: absolute;
+	color: #333;
+	font-weight: 700;
+	letter-spacing: .5px;
+	text-shadow: 1px 1px 0 #CCC,
+	2px 2px 0 #CCC;
+	padding: .5em 2em 1em;
+	border-radius: 1em;
+	background: #34495e url('../img/grito.PNG') 0 0 no-repeat;
+	background-size: 100% 100%;
+	top:-10px;
+	left: 15px;
+	display: none;
+}
+#listaPokemon li > label:hover > span {
+	display: block;
+}
+#listaPokemon h4 {
+	text-align: left;
+	margin-left: 8px;
+}
+#listaPokemon h4:after {
+	content: attr(nombrePokemon);
+}
+#listaPokemon li > label:hover > h4 {
+	visibility: hidden;
+}
+#listaPokemon li label img {
+	width: 60px;
+	height: 60px;
+	vertical-align: top;
+	margin-top: 15px;
+-webkit-transition:all .25s ease-out;
+-moz-transition:all .25s ease-out;
+-ms-transition:all .25s ease-out;
+-o-transition:all .25s ease-out;
+transition:all .25s ease-out;
+}
+#listaPokemon li label:hover img {
+-webkit-transform: scale(-1.2,1.2);
+-moz-transform: scale(-1.2,1.2);
+-ms-transform: scale(-1.2,1.2);
+-o-transform: scale(-1.2,1.2);
+transform: scale(-1.2,1.2);
+}
+#listaPokemon input[type="radio"] {
+	display: none;
+}
+#listaPokemon li > label > p {
+	font-size: .8em;
+	margin: 5px;
+}
+#listaPokemon li label > p  span {
+	display: block;
+}
+#listaPokemon span.vida div {
+	display: block;
+	border:1px solid red;
+}
+.nombreObtenido label p, .nombreObtenido input, .nombreObtenido .getSex {
+	display: none;
+}
+.nombreObtenido label + img#maestroPokebola {
+	position: absolute;
+	display: inline-block;
+	width: 50px;
+	margin-top: -50px;
+}
+.nombreObtenido #nombreUsuario {
+	background: transparent;
+	background-image: none;
+	border:0;
+	color:#34495e;
+	display: block;
+	font-size: 2em;
+	font-weight: 700;
+	text-shadow:5px 5px 5px #999;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+div.box {
+	background: #A67474;
+	border-radius: 1px;
+	display: inline-block;
+	height: 10px;
+	margin: 0 1px;
+	width: 10px;
+}
+div.small {
+	background: #B99292;
+	border-radius: 0;
+	display: inline-block;
+	height: 10px;
+	margin: 0;
+	width: 1px;
+}
+div.active {
+	background: #990000;
+}
+div.box.active + div.small.active {
+	margin-left: 1px;
+}
+div.small + div.box {
+	margin-left: 2px;
+}
+footer {
+	background: #566F76;
+	box-shadow:0 0 3px #ecf0f1;
+	border-radius: 8px;
+	bottom: 0;
+	color: #fff;
+	display: block;
+	margin: 5px 1em;
+	padding: .5em;
+}
